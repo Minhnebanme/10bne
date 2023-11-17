@@ -1,0 +1,11 @@
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Đặt z-index để đảm bảo nằm sau header và nav */
+}

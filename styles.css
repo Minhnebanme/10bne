@@ -1,0 +1,282 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://scontent.fsgn15-1.fna.fbcdn.net/v/t1.15752-9/372946752_685176693505774_2929359132693019025_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=llW1C_B4S00AX_0aIIy&_nc_ht=scontent.fsgn15-1.fna&oh=03_AdS8qmfNDWdnHGi5DcovZlwKq-6Eqz2FDxZF3XmalMcVXw&oe=657AC828");
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px) brightness(80%); /* Điều chỉnh độ mờ và rõ */
+}
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-image: url("https://scontent.fsgn15-1.fna.fbcdn.net/v/t1.15752-9/372946752_685176693505774_2929359132693019025_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=llW1C_B4S00AX_0aIIy&_nc_ht=scontent.fsgn15-1.fna&oh=03_AdS8qmfNDWdnHGi5DcovZlwKq-6Eqz2FDxZF3XmalMcVXw&oe=657AC828"); /* Đặt đường dẫn đến hình ảnh của bạn */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Giữ hình ảnh ở vị trí cố định khi cuộn trang */
+  color: #333; /* Màu chữ cho độ đọc tốt */
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  font-family: "Agbalumo";
+  src: "https://fonts.google.com/specimen/Agbalumo?preview.text=Me%20ne&query=Agbalumo&subset=vietnamese&noto.script=Latn";
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header {
+  background-color: #ffd3be;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+nav {
+  background-color: #ba9781;
+  color: #fff;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+h2 {
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 1em 0;
+  }
+}
+/* CSS cho phần giới thiệu thành viên ở footer */
+footer {
+  background-color: #ffffff;
+  color: #c13030;
+  padding: 20px;
+}
+
+/* CSS cho phần giới thiệu giáo viên ở trên phần giới thiệu thành viên lớp */
+#teacher-intro,
+#teacher-intro-footer,
+#member-intro {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.teacher-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.teacher-info {
+  text-align: left;
+}
+
+.teacher-info h3 {
+  margin-bottom: 5px;
+}
+
+.teacher-info p {
+  font-style: italic;
+  color: #555;
+}
+
+.dev-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dev-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.dev-info {
+  text-align: center;
+}
+
+.dev-info h3 {
+  margin-bottom: 5px;
+}
+
+.dev-info p {
+  font-style: italic;
+  color: #4a16f5;
+}
+.member-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.member-list li {
+  text-align: center;
+  width: 150px; /* Đảm bảo mỗi thành viên có đủ không gian */
+  margin: 10px;
+}
+
+.member-list img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  position: relative;
+}
+
+.lightbox-content img {
+  max-width: 80%;
+  max-height: 80%;
+  display: block;
+  margin: auto;
+}
+
+.close-button,
+.prev-button,
+.next-button {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.close-button {
+  right: 10px;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#open-button {
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
